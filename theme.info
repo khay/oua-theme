@@ -1,0 +1,7 @@
+name = OUA
+description = Website theme for OnlineUniApplication
+author = Myanmar Links
+website = http://myanmarlinks.net
+version = 1.0
+min-require = 2.0
+widget_areas = [header : Header Area, sidebar : Sidebar Area, footer : Footer Area]
