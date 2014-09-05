@@ -1,0 +1,42 @@
+<div class="breadcrumb">
+	<div class="container">
+		<div class="col-md-12">
+			<h2>About</h2>
+		</div>
+		{{ loop($breadcrumbs as $name => $url) }}
+
+     	{{ if($name !== 'Home') }}     	
+         	 {{ if(! is_null($url)) }}
+         	 	<li><a href="{{ $url }}" >{{ $name }}</a></li>
+         	 {{ else }}
+         	 	<li class="active">{{ $name }}</li>
+         	 {{ endif }}
+     	{{ endif }}
+
+     	{{ endloop }}
+	</div>
+</div>
+
+{{ Flash::bootstrap(false) }}
+
+ <!-- Breadcrumb Start -->
+ <ol class="breadcrumb">
+  <li>
+
+    <a href="{{ url() }}">
+        <span class="glyphicon glyphicon-home"></span>
+        Home
+    </a>
+     {{ loop($breadcrumbs as $name => $url) }}
+
+     	{{ if($name !== 'Home') }}     	
+         	 {{ if(! is_null($url)) }}
+         	 	<li><a href="{{ $url }}" >{{ $name }}</a></li>
+         	 {{ else }}
+         	 	<li class="active">{{ $name }}</li>
+         	 {{ endif }}
+     	{{ endif }}
+
+     {{ endloop }}
+  </li>
+</ol>

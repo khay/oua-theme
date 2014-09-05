@@ -1,0 +1,286 @@
+/**
+ *
+ * Online University Application
+ * Developed by Myanmar Links
+ * 
+ * © Crown Education
+ *
+**/
+
+/* Webfonts */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Roboto:400,300,100,700,500);
+@import url(http://mmwebfonts.comquas.com/fonts/?font=mon3);
+
+/* font-family:'MON3 Anonta 1'; */
+
+body {
+	font-family: 'Open Sans', 'MON3 Anonta 1', sans-serif;	
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 1.8em;
+	color: #696969;
+}
+
+h1, h2, h3, h4, h5 {
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+}
+
+.head-wrapper {
+	background: #fcfcfc;
+	margin-bottom: 31px;
+	padding: 30px 0;
+}
+
+.search-form {
+	position: relative;
+	border: 1px solid #d6d6d6;
+	border-radius: 6px;
+}
+
+.search-form select,
+.search-form input {
+	border: none;
+	box-shadow: none;
+	border-radius: 0px;
+	padding: 0px 20px;
+}
+
+.search-form input {
+	border-left: 1px solid #d6d6d6;
+	padding-right: 40px;
+}
+
+.search-form button {
+	position: absolute;
+	z-index: 1;
+	right: 3px;
+	top: 3px;
+	font-size: 10px;
+	padding: 6px 10px;
+}
+
+.search-form button i {
+	font-size: 10px;
+}
+
+/* navbar */
+
+.navbar {
+	margin-bottom: 7px;
+}
+
+.navbar-nav {
+	margin-top: -13px;
+}
+
+.head-nav li a {
+	color: #848484;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.nav-login {
+	padding: 0 15px;
+}
+
+.nav-login a {
+	color: #fff;
+	background-color: #5168b3;
+	border-right: 0px;
+	padding: 35px 40px;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+/* Homepage Universities */
+
+.home-uni h2 {
+	text-align: center;
+	color: #a0a0a0;
+	font-weight: 300;
+	padding: 20px 0;
+}
+
+.university {
+	margin-bottom: 40px;
+}
+
+.university h3 {
+	margin-bottom: 15px;
+	font-weight: 300;
+}
+
+.university h3 a {
+	color: #5e5e5e;
+}
+
+.university img {
+	width: 525px;
+	height: auto;
+	margin-bottom: 15px;
+	border-radius: 6px;
+	max-width: 100%;
+}
+
+.university span {
+	display: block;
+	margin-bottom: 15px;
+	color: #bbbbbb;
+}
+
+.university .more {
+	background-color: #f14646;
+	color: #fff;
+}
+
+.university button {
+	text-transform: uppercase;
+	font-size: 13px;
+}
+
+/* Facebook box and contact */
+
+.contact-wrapper {
+	background-color: #ebebeb;
+	padding: 20px 0px 40px 0px;
+
+}
+
+.address h3 {
+	color: #a0a0a0;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+
+.address p {
+	font-size: 15px;
+	color: #626262;
+}
+
+/* Footer */
+
+.footer {
+	text-align: center;
+	padding: 20px 0;
+	color: #a9a9a9;
+}
+
+/* Breadcrumb */
+
+.breadcrumb {
+	padding: 30px 0;
+}
+
+.breadcrumb h2 {
+	color: #a0a0a0;
+}
+
+/* Pagination */
+
+.pagination-wrapper {
+	background-color: #fafafa;
+	padding: 10px 0;
+}
+
+.pagination>li>a,
+.pagination>li>span {
+	border: none;
+	margin-right: 10px;
+	font-size: 15px;
+	color: #808080;
+}
+
+.pagination>.active>a, 
+.pagination>.active>span, 
+.pagination>.active>a:hover, 
+.pagination>.active>span:hover, 
+.pagination>.active>a:focus, 
+.pagination>.active>span:focus {
+	color: #d5d5d5;
+	background-color: #fff;
+}
+
+/* Uni search */
+.uni-filter select {
+	color: #979797;
+	margin-right: 10px;
+	border: none;
+}
+
+/* Contact form */
+.uni-single input,
+.uni-single textarea {
+	background-color: #fcfcfc;
+	border: 1px solid #e8e8e8;
+	padding: 20px 10px;
+	margin-bottom: 20px;
+}
+
+.uni-single textarea {
+	height: 200px;
+}
+
+.uni-single button {
+	font-weight: 300;
+	font-size: 14px;
+	background-color: #27b0d8;
+	border: none;
+}
+
+/* Homepage Socials */
+.address ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.address ul li {
+	margin-bottom: 15px;
+	font-size: 14px;
+}
+
+.address ul li .fa {
+	margin-right: 10px;
+	font-size: 26px;
+}
+
+.address .fa-facebook-square {
+	color: #3b5998;
+}
+
+.address .fa-envelope-square {
+	color: #f80000;
+}
+
+/* Slides */
+.slides {
+	margin-bottom: 20px;
+}
+
+/* Homepage Tabs */
+
+.uni-forms {
+	border-radius: 6px;
+	padding: 22px;
+	background-color: rgba(0,0,0,0.1);
+}
+
+.homepage_login,
+.unisearch {
+	margin: 20px 0;
+}
+
+.unisearch .form-control {
+	margin-bottom: 20px;
+}
+
+
+/* Will delete this later */
+
+.slide {
+	background-size: cover;
+	width: 100%;
+	height: 280px;
+	background-position: center center;
+}
