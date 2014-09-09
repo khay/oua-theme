@@ -1,11 +1,130 @@
 	<!DOCTYPE html>
 <html lang="en">
 <head>
+
 	{{ include:metadata }}
+
 </head>
 <body>
+
 	{{ include:header }}
 
+	<!-- Slides -->
+	<div class="slides container">
+	    <div id="da-slider" class="da-slider">
+			<div class="da-slide" style="background: transparent url(http://oua.dev/assets/images/temp/slide1.jpg);">
+				<h2>Easy management</h2>
+				<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+				<a href="#" class="da-link">Learn more</a>
+				<div class="da-img"></div>
+			</div>
+			<div class="da-slide" style="background: transparent url(http://oua.dev/assets/images/temp/slide2.jpg);">
+				<h2>Revolution</h2>
+				<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+				<a href="#" class="da-link">Learn more</a>
+				<div class="da-img"></div>
+			</div>
+			<div class="da-slide" style="background: transparent url(http://oua.dev/assets/images/temp/slide3.jpg);">
+				<h2>Warm welcome</h2>
+				<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.</p>
+				<a href="#" class="da-link">Learn more</a>
+				<div class="da-img"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="col-md-12 home-uni">
+			<div class="col-md-6 university">
+				<h3>Welcome to Online University App</h3>
+				<p>Welcome to Online University Application! You may use this system for browsing overseas institutions, exploring various courses at those institutions, sending application according to interest and eligibility, receiving admission assessment and more. You are required to register at this website and upon registration, you will be able to complete appropriate application forms. After completing the forms, you will be able to know whether you are qualified to apply particular course, then you may proceed admission process. Important instructions for completing your application package in Online University Application system to apply to member institutions are also provided. The menu on the top will allow the student to navigate through the system, and we recommend that you begin with "Profile".</p>
+			</div>
+			<div class="col-md-6 university uni-forms">
+				<ul class="nav nav-tabs" role="tablist" id="myTab">
+					<li class="active"><a href="#loghome" role="tab" data-toggle="tab">Log In</a></li>
+				  	<li><a href="#sunihome" role="tab" data-toggle="tab">Search Universities</a></li>
+				</ul>
+
+				<div class="tab-content">
+					<div class="tab-pane active" id="loghome">
+						<div class="homepage_login">
+							<form action="#" role="form">
+								<div class="form-group">
+								    <div class="input-group">
+								    	<div class="input-group-addon"><i class="fa fa-user"></i></div>
+								    	<input class="form-control" type="email" placeholder="Email Address">
+								    </div>
+								</div>
+								<div class="form-group">
+								    <div class="input-group">
+								    	<div class="input-group-addon"><i class="fa fa-lock"></i></div>
+								    	<input class="form-control" type="password" placeholder="Password">
+								    </div>
+								</div>
+								<div class="checkbox">
+							    	<label>
+							      		<input type="checkbox"> Remember in this computer?
+							    	</label>
+							  	</div>
+							  	<button type="submit" class="btn btn-success">Sign In</button>
+							</form>
+						</div>
+					</div>
+					<div class="tab-pane" id="sunihome">						
+						<div class="unisearch">
+							<form action="#" role="form">
+						    	<select name="country" id="unisearch-country" class="form-control">
+						    		<option value="us" selected="selected">United States</option>
+						    		<option value="uk">United Kingdom</option>
+						    		<option value="sg">Singapore</option>
+						    		<option value="malay">Malaysia</option>
+						    		<option value="indo">Indonesia</option>
+						    	</select>
+								<input class="form-control" type="text" placeholder="Enter University Name">
+							  	<button type="submit" class="btn btn-success"><i class="fa fa-search"></i> Search</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Facebook and Contact Address -->
+	<div class="contact-wrapper">
+		<div class="container">
+			
+			<div class="col-md-12">
+				<div class="col-md-6 address">
+					<h3>Contact via</h3>
+					<ul>
+						<li><i class="fa fa-facebook-square"></i><a target="_blank" href="https://www.facebook.com/crowneducation">Find us on Facebook</a></li>
+						<li class="envelope"><i class="fa fa-envelope-square"></i><a target="_blank" href="mailto:info@onlineuniapplication.com">Contact via Email</a></li>	
+					</ul>
+				</div>
+				<div class="col-md-6 address">
+					<h3>Address</h3>
+					<address>
+						<p>No. 270, 1st Floor, Room 1-B, Pyay Road, Myaynigone.</p>
+						<p>Ph : 2038209, 182081021</p>
+					</address>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
 	{{ include:footer }}
+	{{ js(array('jquery.cslider.js')) }}
+	<script>
+		$(document).ready(function(){
+			$('#da-slider').cslider({
+				autoplay: true,
+				bgincrement	: 0,
+				interval	: 9000
+			});
+		});
+	</script>
+
 </body>
 </html>

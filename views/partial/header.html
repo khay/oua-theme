@@ -29,12 +29,12 @@
 		<div class="container">
 			<nav class="navbar head-nav">
 	  			<ul class="nav navbar-nav head-nav">
-					<li class="active"><a href="index.html">Home</a></li>
-					<li><a href="universities.html">Universities</a></li>
-					<li><a href="courses.html">Courses</a></li>
-					<li><a href="#">Help</a></li>
-					<li><a href="page.html">About</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li class="active"><a href="{{ url() }}">Home</a></li>
+					<li><a href="{{ url('university') }}">Universities</a></li>
+					<li><a href="{{ url('university/course') }}">Courses</a></li>
+					<li><a href="{{ url('help') }}">Help</a></li>
+					<li><a href="{{ url('about') }}">About</a></li>
+					<li><a href="{{ url('contact') }}">Contact</a></li>
 				</ul>
 				
 				<div class="navbar-right nav-login">

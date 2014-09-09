@@ -1,0 +1,25 @@
+{{ Form::start('contact','',true,array('class'=>'contact-form')) }}
+		
+	{{ Form::input('name', isset($mail->name) ? $mail->name : '', 'text', array('placeholder' => 'Name', "class" => "form-control")) }}
+	<span class="field-error">{{ $errors['name'] }}</span>
+		
+	{{ Form::input('email', isset($mail->email) ? $mail->email : '', 'text', array('placeholder' => 'Email Address', "class" => "form-control")) }}
+	<span class="field-error">{{ $errors['email'] }}</span>
+
+
+	{{ Form::input('subject', isset($mail->subject) ? $mail->subject : '', 'text', array('placeholder' => 'Subject', "class" => "form-control")) }}
+	<span class="field-error">{{ $errors['subject'] }}</span>
+
+	{{ Form::textarea('message', isset($mail->message) ? $mail->message :'',array('placeholder' => 'Message', "class" => "form-control")) }}
+	<span class="field-error">{{ $errors['message'] }}</span>
+
+	{{ if($hasAttach == 'yes')}}
+		{{ Form::file('attachment',array()) }}
+		<span class="field-error">{{ $errors['attachment'] }}</span>
+	{{ endif }}
+
+	{{ loop ($custom_field as $field) }}
+        {{ $field }}
+    {{ endloop }}
+	{{ Form::submit('submit', 'Send', array('class' => 'btn btn-primary btn-lg')) }}
+{{ Form::end() }}

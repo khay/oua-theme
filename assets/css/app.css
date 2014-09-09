@@ -9,12 +9,15 @@
 
 /* Webfonts */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Roboto:400,300,100,700,500);
-@import url(http://mmwebfonts.comquas.com/fonts/?font=mon3);
+@font-face {
+    font-family: 'Myanmar Census';
+    src: url(../fonts/mmrcensus.ttf);
+}
 
 /* font-family:'MON3 Anonta 1'; */
 
 body {
-	font-family: 'Open Sans', 'MON3 Anonta 1', sans-serif;	
+	font-family: 'Open Sans', 'Myanmar Census', sans-serif;	
 	font-size: 14px;
 	font-weight: 300;
 	line-height: 1.8em;
@@ -221,9 +224,11 @@ h1, h2, h3, h4, h5 {
 	height: 200px;
 }
 
-.uni-single button {
+.uni-single button,
+.uni-single input[type=submit] {
 	font-weight: 300;
 	font-size: 14px;
+	padding: 10px 25px;
 	background-color: #27b0d8;
 	border: none;
 }
@@ -273,6 +278,10 @@ h1, h2, h3, h4, h5 {
 
 .unisearch .form-control {
 	margin-bottom: 20px;
+}
+
+.container img {
+	max-width: 100%;
 }
 
 
