@@ -1,0 +1,12 @@
+<div class="btn-group">
+	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+    	{{ $user->profileImage(60) }} {{ $user->full_name }} <span class="caret"></span>
+  	</button>
+  	
+  	<ul class="dropdown-menu" role="menu">
+  		<li><a href="#">View Profile</a></li>
+    	<li><a href="#">Edit Profile</a></li>
+    	<li class="divider"></li>
+    	<li><a href="{{ url('user/logout') }}">Logout</a></li>
+  	</ul>
+</div>
