@@ -28,14 +28,15 @@
 	<div class="col-md-12">
 		<div class="container">
 			<nav class="navbar head-nav">
-	  			<ul class="nav navbar-nav head-nav">
+	  			<!-- <ul class="nav navbar-nav head-nav">
 					<li class="active"><a href="{{ url() }}">Home</a></li>
 					<li><a href="{{ url('university') }}">Universities</a></li>
 					<li><a href="{{ url('university/course') }}">Courses</a></li>
 					<li><a href="{{ url('help') }}">Help</a></li>
 					<li><a href="{{ url('about') }}">About</a></li>
 					<li><a href="{{ url('contact') }}">Contact</a></li>
-				</ul>
+				</ul> -->
+				{{ Navigation::bootstrap('header') }}    
 				
 				<div class="navbar-right nav-login">
 					{{ widgetArea:header }}
