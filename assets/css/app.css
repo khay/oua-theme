@@ -7,19 +7,14 @@
  *
 **/
 
-/* Webfonts */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Roboto:400,300,100,700,500);
 @font-face {
     font-family: 'Myanmar Census';
     src: url(../fonts/mmrcensus.ttf);
 }
 
-/* font-family:'MON3 Anonta 1'; */
-
 body {
-	font-family: 'Open Sans', 'Myanmar Census', sans-serif;	
+	font-family: 'Quicksand', 'Myanmar Census', sans-serif;	
 	font-size: 14px;
-	font-weight: 300;
 	line-height: 1.8em;
 	color: #696969;
 }
